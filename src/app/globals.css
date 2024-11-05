@@ -20,6 +20,7 @@
       --text-xl: 1.5rem;
       --text-2xl: 1.75rem;
       --text-3xl: 2rem;
+      --border: #E3DBD8;
     }
 
     body {
@@ -84,5 +85,30 @@
             -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
         }
+    }
+
+    .image-collage{
+        display:grid;
+        min-height:30rem;
+        grid-template-areas:
+        "a a b"
+        "a a c"
+        "a a c"
+        ". . c"
+        ". . c"
+        ;
+        gap:1.5em;
+    }
+
+    .image-collage__a {
+        grid-area: a;
+    }
+
+    .image-collage__b {
+        grid-area: b;
+    }
+
+    .image-collage__c {
+        grid-area: c;
     }
 }

@@ -1,4 +1,5 @@
 import { HeroCards } from "@/components/home/HeroCards";
+import { SchoolSummary } from "@/components/home/SchoolSummary";
 import ImageSlider, { sliderImages as SliderImages } from "@/components/ImageSlider/ImageSlider";
 
 export default function Home() {
@@ -23,9 +24,10 @@ export default function Home() {
                 <section id="hero" className="space-y-8">
                     <ImageSlider images={sliderImages} />
                     <HeroCards/>
+                    <SchoolSummary />
                 </section>
             </header>
-            <main>
+            <main className="space-y-16">
             </main>
         </div>
     );

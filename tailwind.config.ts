@@ -19,6 +19,7 @@ const config: Config = {
                     blue: "var(--blue-accent)",
                     dark: "var(--dark-accent)",
                 },
+                border: "var(--border)",
                 card: {
                     DEFAULT: "var(--card-grey)",
                     magenta: "var(--card-magenta)",
