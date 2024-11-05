@@ -60,7 +60,7 @@ function SchoolSummaryDesc() {
             </p>
             <div className="mt-8 flex gap-4 flex-row justify-start items-start">
                 {
-                    cardData.map(card => (<SmallFeatureCard cardData={card} />))
+                    cardData.map((card, index) => (<SmallFeatureCard cardData={card} key={index} />))
                 }
             </div>
             <Link href="/about/school" className="inline-block mt-4 w-fit p-4 border border-accent-dark text-sm rounded-[3em] flex items-center gap-2">
@@ -86,7 +86,7 @@ function SmallFeatureCard({ cardData }: { cardData: SmallFeatureCardData }) {
 
                 <ul className="mt-8 space-y-1">
                     {
-                        cardData.features.map(feature => <SmallFeatureCardListItem>{feature}</SmallFeatureCardListItem>)
+                        cardData.features.map((feature, index)=> <SmallFeatureCardListItem  key={index} >{feature}</SmallFeatureCardListItem>)
                     }
                 </ul>
             </div>
